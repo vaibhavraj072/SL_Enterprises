@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+	background: #fff;
+	color: #18181b;
+}
+
+/* Custom utility classes for the site */
+.bg-gradient-to-b {
+	background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+/* Example: Add smooth scrolling for anchor links */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Example: Button focus style */
+button:focus {
+	outline: 2px solid #f59e0b;
+	outline-offset: 2px;
+}
