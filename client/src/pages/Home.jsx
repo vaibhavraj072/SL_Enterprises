@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { Wrench, Fuel, Boxes, Truck, Phone, Mail, MapPin, CheckCircle2, ChevronRight, ArrowUpRight, Linkedin, Instagram, FileText, ShieldCheck } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Wrench, Fuel, Boxes, Truck, Phone, Mail, MapPin, CheckCircle2, ChevronRight, ArrowUpRight, Linkedin, Instagram, FileText } from "lucide-react";
+import logoNavbar from "../assets/logo_navbar.png";
 
 // ---- Utility: Smooth scroll for in-page links ----
 const scrollToId = (id) => {
@@ -93,9 +94,9 @@ export default function ShreeLaxmiEnterprisesSite() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-3">
-              {/* Logo placeholder: replace src with your logo path */}
-              <div className="flex items-center justify-center w-10 h-10 rounded-2xl bg-amber-100 border border-amber-200">
-                <ShieldCheck className="w-6 h-6" aria-hidden />
+              {/* Logo image */}
+              <div className="flex items-center justify-center w-10 h-10 rounded-2xl bg-amber-100 border border-amber-200 overflow-hidden">
+                <img src={logoNavbar} alt="Logo" className="w-8 h-8 object-contain" />
               </div>
               <div className="leading-tight">
                 <div className="font-semibold tracking-tight">{BRAND.name}</div>
@@ -170,12 +171,15 @@ export default function ShreeLaxmiEnterprisesSite() {
 
             <div className="relative">
               <div className="aspect-[4/3] w-full rounded-3xl border bg-white shadow-xl p-6 grid place-items-center">
-                {/* Replace this placeholder with your logo image */}
+                {/* Company logo image */}
                 <div className="text-center">
-                  <div className="mx-auto w-28 h-28 rounded-full border grid place-items-center">
-                    <ShieldCheck className="w-12 h-12" />
+                  <div className="mx-auto w-28 h-28 rounded-full border grid place-items-center overflow-hidden bg-white group">
+                    <img 
+                      src={logoNavbar} 
+                      alt="Logo" 
+                      className="w-20 h-20 object-contain transition-transform duration-500 group-hover:scale-110" 
+                    />
                   </div>
-                  <p className="mt-4 text-sm text-zinc-600">Place company logo here</p>
                 </div>
               </div>
               <div className="absolute -bottom-6 -left-6 rotate-[-3deg] bg-amber-100 border border-amber-200 rounded-2xl p-3 text-xs shadow">

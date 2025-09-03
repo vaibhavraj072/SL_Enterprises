@@ -1,3 +1,7 @@
+/* Custom group-hover scale for logo zoom in hero section */
+.group:hover .group-hover\:scale-110 {
+	transform: scale(1.10);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
