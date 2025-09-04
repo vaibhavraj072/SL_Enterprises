@@ -173,13 +173,13 @@ export default function ShreeLaxmiEnterprisesSite() {
               <div className="aspect-[4/3] w-full rounded-3xl border bg-white shadow-xl p-6 grid place-items-center">
                 {/* Company logo image */}
                 <div className="text-center">
-                  <div className="mx-auto w-28 h-28 rounded-full border grid place-items-center overflow-hidden bg-white group">
+                  {/* <div className="mx-auto w-28 h-28 rounded-full border grid place-items-center overflow-hidden bg-white group"> */}
                     <img 
                       src={logoNavbar} 
                       alt="Logo" 
                       className="w-20 h-20 object-contain transition-transform duration-500 group-hover:scale-110" 
                     />
-                  </div>
+                  {/* </div> */}
                 </div>
               </div>
               <div className="absolute -bottom-6 -left-6 rotate-[-3deg] bg-amber-100 border border-amber-200 rounded-2xl p-3 text-xs shadow">
